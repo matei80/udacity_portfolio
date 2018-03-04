@@ -1,0 +1,205 @@
+/* ===== GENERAL SETTINGS ===== */
+html, 
+body {
+	font-family: Verdana, Helvetica, serif;
+}
+
+
+/* ===== JUMBOTRON ===== */
+.jumbotron {
+	border-radius: 0!important;
+	height: 400px;
+	background: #C5C1C0;
+	background: url(../images/header_background_image.jpg) no-repeat top center;
+	background-size: cover;
+}
+
+.jumbotron h2,
+.jumbotron p {
+	font-weight: 600;
+	color: #0a1612;
+	text-shadow:1px 1px 10px #f7ce3e, 1px 1px 10px #c5c1c0;
+}
+
+/* JUMBOTRON Social Buttons */
+.social-icons .btn-default {
+	background: linear-gradient(to right, #f7ce3e, #f80);
+}
+
+.social-icons .btn-default:hover {
+	animation: animateButton 0.5s infinite;
+}
+
+.social-icons .fa {
+	font-size: 20px;
+}
+
+/* ===== PORTFOLIO SECTION ===== */
+#portfolio h2,
+#contact h3 {
+	color: #c5c1c0;
+	text-shadow: 1px 1px 2px #0a1612, 1px 1px 2px #c5c1c0;
+}
+
+#portfolio figure {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#portfolio figure:hover {
+	box-shadow: 1px 1px 2px #0a1612;
+	text-shadow: 1px 1px 2px #0a1612, 1px 1px 2px #c5c1c0;
+}
+
+#portfolio figure:hover img {
+	transform: scale(1.05);
+}
+
+#portfolio figure img {
+	border-radius: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+#portfolio .text-20 a:hover {
+	text-decoration: none;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+	margin: 50px auto; 
+	position: relative;
+	background: #1A2930;  /* fallback */
+	background: url(../images/contact_img.jpg) no-repeat top center;
+	background-size: cover;
+}
+
+#contact h3 {
+	position: absolute;
+	left: auto;
+	top: -55px;	
+}
+
+#contact form {
+	padding: 20px;
+}
+
+.submit {
+	background: linear-gradient(to right, #f7ce3e, #f80);
+}
+
+.submit:hover {
+	animation: animateButton 1s infinite;
+}
+
+/* ===== PAGE FOOTER ===== */
+#page-footer {
+	width: 100%;
+	min-height: 70px;
+	margin: 0;
+	padding: 20px 0 0 0;
+	background: #c5c1c0;
+	overflow-x: hidden;
+}
+
+/* Social icons settings */
+.fa-facebook-official,
+.fa-google-plus-square,
+.fa-linkedin-square {
+	font-size: 32px;
+	margin-right: 10px;
+}
+
+.fa-facebook-official {
+	color: #3b5998;
+}
+
+.fa-google-plus-square {
+	color: #d34836;
+}
+
+.fa-linkedin-square {
+	color: #0077b5;
+}
+
+/* ===== HELPER CLASSES ===== */
+.border-bottom-3 {
+	border-bottom: 3px solid #C5C1C0;
+}
+
+.fa-big {
+	font-size: 32px !important;
+}
+
+.form-label {
+	color: #0a1612;
+	text-shadow: 1px 0 0 #f7ce3e;
+}
+
+.is-block {
+	display: block;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.padding-bottom-20 {
+	padding-bottom: 20px;
+}
+
+.padding-right-20 {
+	padding-right: 20px;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
+.small-hr {
+	height: 1px;
+	width: 200px;
+	color: #c5c1c0;
+}
+
+.text-20 {
+	font-size: 20px;
+}
+
+.text-mutted {
+	color: #aaa;
+	font-size: 16px;
+	word-break: break-all;
+}
+
+/* ===== MOBILE MEDIA QUERIES ===== */
+@media screen and (max-width: 767px) {
+	#logo {
+		margin: 0 auto;
+	}
+
+	.page-title h1,
+	.page-title h3 {
+		text-align: center;
+	}
+
+	.social-icons {
+		padding-top: 5px;
+	}
+	
+	.social-icons .btn-default {
+		margin-top: 10px;
+	}
+
+	#page-footer {
+		padding-bottom: 20px;
+	}
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes animateButton {
+	  0% { background: linear-gradient(to left, #f7ce3e 50%, #f80 100%); }
+	 25% { background: linear-gradient(to left, #f7ce3e 25%, #f80 50%, #f7ce3e 100%); }
+	 50% { background: linear-gradient(to left, #f7ce3e 0%, #f80 50%, #f7ce3e 75%); }
+	 75% { background: linear-gradient(to left, #f80 25%, #f7ce3e 50%, #f7ce3e 100%); }
+	100% { background: linear-gradient(to left, #f80 0%, #f7ce3e 50%, #f7ce3e 100%); }
+}
