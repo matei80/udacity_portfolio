@@ -27,7 +27,8 @@ body {
 }
 
 .social-icons .btn-default:hover {
-	animation: animateButton 0.5s infinite;
+	-webkit-animation: animateButton 0.5s infinite;
+	        animation: animateButton 0.5s infinite;
 }
 
 .social-icons .fa {
@@ -38,7 +39,8 @@ body {
 #portfolio h2,
 #contact h3 {
 	color: #c5c1c0;
-	text-shadow: 1px 1px 2px #0a1612, 1px 1px 2px #c5c1c0;
+	text-shadow: 1px 1px 2px #0a1612, 
+	             1px 1px 2px #c5c1c0;
 }
 
 #portfolio figure {
@@ -49,10 +51,13 @@ body {
 #portfolio figure:hover {
 	box-shadow: 1px 1px 2px #0a1612;
 	text-shadow: 1px 1px 2px #0a1612, 1px 1px 2px #c5c1c0;
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 #portfolio figure:hover img {
-	transform: scale(1.05);
+	opacity: 0.8;
 }
 
 #portfolio figure img {
@@ -197,6 +202,14 @@ body {
 
 /* ===== ANIMATIONS ===== */
 @keyframes animateButton {
+	  0% { background: linear-gradient(to left, #f7ce3e 50%, #f80 100%); }
+	 25% { background: linear-gradient(to left, #f7ce3e 25%, #f80 50%, #f7ce3e 100%); }
+	 50% { background: linear-gradient(to left, #f7ce3e 0%, #f80 50%, #f7ce3e 75%); }
+	 75% { background: linear-gradient(to left, #f80 25%, #f7ce3e 50%, #f7ce3e 100%); }
+	100% { background: linear-gradient(to left, #f80 0%, #f7ce3e 50%, #f7ce3e 100%); }
+}
+
+@-webkit-keyframes animateButton {
 	  0% { background: linear-gradient(to left, #f7ce3e 50%, #f80 100%); }
 	 25% { background: linear-gradient(to left, #f7ce3e 25%, #f80 50%, #f7ce3e 100%); }
 	 50% { background: linear-gradient(to left, #f7ce3e 0%, #f80 50%, #f7ce3e 75%); }
